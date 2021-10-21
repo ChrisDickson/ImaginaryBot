@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  discord-bot:
+    build: .
+    volumes:
+      - .:/code/
+    container_name: discord-bot
+    env_file: 
+      - .env
